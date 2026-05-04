@@ -2356,6 +2356,12 @@ public class BoxTestGenerated extends AbstractBoxTest {
       }
 
       @Test
+      @TestMetadata("LargeGraphJvmSignatureLimit.kt")
+      public void testLargeGraphJvmSignatureLimit() {
+        runTest("compiler-tests/src/test/data/box/interop/dagger/LargeGraphJvmSignatureLimit.kt");
+      }
+
+      @Test
       @TestMetadata("KotlinDaggerFactoryClassCanBeLoaded.kt")
       public void testKotlinDaggerFactoryClassCanBeLoaded() {
         runTest("compiler-tests/src/test/data/box/interop/dagger/KotlinDaggerFactoryClassCanBeLoaded.kt");
